@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    background-color: rgb(193, 100, 193);
+}
+
+
+.navbar nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+    background-color: black;
+    color: white;
+    padding: 1rem;
+}
+
+.heading {
+    display: flex;
+    justify-content: center;
+}
+
+#receipe-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 2rem;
+    gap: 2rem;
+
+}
+
+#receipe-container img {
+    width: 300px;
+    border-radius: 15px;
+
+}
+
+.receipe{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.btn{
+    padding: 0.5rem;
+    border: none;
+    border-radius: 5px;
+
+}
+
+.btn:hover{
+background-color: black;
+color: white;
+}
+
+.btn:active{
+    background-color: green;
+}
+
+a {
+    text-decoration: none;
+    /* color:black; */
+}
+
+a  :hover{
+    color :white
+}
