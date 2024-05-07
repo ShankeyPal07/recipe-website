@@ -31,6 +31,8 @@ body {
     flex-wrap: wrap;
     margin: 2rem;
     gap: 2rem;
+    justify-content: center;
+    align-items: center;
 
 }
 
