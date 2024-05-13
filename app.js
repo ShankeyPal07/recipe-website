@@ -44,3 +44,30 @@ const fetchReceipe = async () => {
 };
 
 btnEl.addEventListener("click", fetchReceipe);
+
+
+const fecthdish = async () => {
+  try {
+    const data = await fetch(`${url}`);
+    const res = await data.json();
+
+    res.meals.forEach((element) => {
+      // Create a new div element for each recipe
+      const recipeDiv = document.createElement('div');
+      recipeDiv.classList.add('receipe');
+      recipeDiv.innerHTML = `
+        <div class="img">
+          <img src="${element.strMealThumb}" alt="" />
+        </div>
+        <h2>${element.strMeal}</h2>
+        <button class="btn"><a href="${element.strSource}"> View Recipe</a></button>
+      `;
+      // Append the recipe div to the container
+      receipecontainerEL.appendChild(recipeDiv);
+    });
+  } catch (error) {
+    console.error('Error fetching data:', error);
+  }
+};
+
+document.body.onload = fecthdish;

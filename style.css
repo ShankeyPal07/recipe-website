@@ -8,6 +8,7 @@ body {
     height: 100%;
     width: 100%;
     background-color: rgb(186 230 253);
+    font-family: 'Courier New', Courier, monospace;
 }
 
 
@@ -33,7 +34,7 @@ body {
     gap: 2rem;
     justify-content: center;
     align-items: center;
-    
+
 
 }
 
@@ -85,7 +86,7 @@ a :hover {
     font-weight: 600;
 }
 
-.btn{
+.btn {
     background-color: rgb(203 213 225);
     border: none;
     padding: 0.5rem;
@@ -96,13 +97,23 @@ a :hover {
     color: black;
 }
 
-.btn:hover{
-border: 1px solid green;}
+.btn:hover {
+    border: 1px solid green;
+}
 
 
-.logo{
+.logo {
     font-weight: 900;
     font-size: 2rem;
     color: black;
-    font-family:'Courier New', Courier, monospace;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.head-txt {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem;
+    font-size: 2rem;
+
 }
